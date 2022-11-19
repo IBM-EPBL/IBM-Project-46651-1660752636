@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="static/css/Loginpage.css">
+	<script type="text/javascript">
+		msg = "{{msg}}"
+		if (msg != "")
+		{
+			alert(msg);
+		}
+	</script>
+</head>
+<body>
+ 
+	<div class="Main" style="background-image:url('static/img/F1.jpg')">
+		<div class="form-box">
+			<div class="button-box">
+				<form></form>
+			</div>
+			    <div class="social-icons">
+					<img src="static/img/F2.png">
+		    	</div>
+		    	<form action="/loginpage" method="post" id="login" class="input-group">
+		    		<input type="text" class="input-field" name="userid" placeholder="User Id" required>
+		    		<input type="text" class="input-field" name="password" placeholder="Password" required>
+		    		<input type="checkbox" class="check-box"><span>Remember password</span>
+		    		<button type="submit" class="submit-btn">Login In</button>
+		    	</form>
+
+		</div>
+	</div>
+</body>
+</html>
